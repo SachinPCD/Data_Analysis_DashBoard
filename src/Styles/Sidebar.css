@@ -1,0 +1,65 @@
+.sidebar-container {
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+  border-right: 2px solid #00adb5;
+  position: fixed;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-shadow: 0 0 8px #00adb5;
+}
+
+.sidebar-buttons {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.sidebar-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #eee;
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.sidebar-btn:hover {
+  background: rgba(0, 173, 181, 0.2);
+  transform: scale(1.05) translateZ(2px);
+  box-shadow: 0 4px 15px rgba(0, 173, 181, 0.3);
+}
+
+.sidebar-btn .icon {
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.sidebar-btn .label {
+  flex: 1;
+}
+
+.sidebar-btn.active {
+  background: #00adb5;
+  color: #111;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00adb5;
+}
